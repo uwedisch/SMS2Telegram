@@ -31,12 +31,3 @@ jobs:
         name: Package
         path: app/release
         
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v4.1.8
-      with:
-        # Destination path. Supports basic tilde expansion. Defaults to $GITHUB_WORKSPACE
-        path: app/release
-        
-    - name: Display structure of downloaded files
-      run: ls -R app/release
-      
