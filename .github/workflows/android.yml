@@ -26,6 +26,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
+    - name: Rename app APK
+      run: mv app/build/outputs/apk/release/app-release-unsigned.apk app/build/outputs/apk/release/sms2telegram-release.apk
+      
     - name: Sign app APK
       uses: r0adkll/sign-android-release@f30bdd30588842ac76044ecdbd4b6d0e3e813478
       id: sign_app
