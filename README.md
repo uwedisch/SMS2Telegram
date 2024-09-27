@@ -23,4 +23,4 @@ You'll also want to turn off battery optimisation for this APP to avoid it being
 
 ## Download
 
-See https://github.com/hyhugh/SMS2Telegram/tree/master/app/release
+See artifact of Android CI workflow: https://github.com/uwedisch/SMS2Telegram/actions/workflows/android.yml
