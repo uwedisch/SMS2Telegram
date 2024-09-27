@@ -26,19 +26,19 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: Android Sign
-      uses: Tlaster/android-sign@v1.2.2
+    - name: Sign app APK
+      uses: r0adkll/sign-android-release@f30bdd30588842ac76044ecdbd4b6d0e3e813478
+      id: sign_app
       with:
         releaseDirectory: app/build/outputs/apk/release
         signingKeyBase64: ${{ secrets.SIGNING_KEY }}
         alias: ${{ secrets.ALIAS }}
         keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
         keyPassword: ${{ secrets.KEY_PASSWORD }}
-        output: app/build/outputs/apk/release/signed
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Package
-        path: app/build/outputs/apk/release/signed
+        name: Signed app bundle
+        path: ${{steps.sign_app.outputs.signedReleaseFile}}
         
