@@ -46,3 +46,5 @@ jobs:
         name: Signed app bundle
         path: ${{steps.sign_app.outputs.signedReleaseFile}}
         
+    - name: Gradle Dependency Submission
+      uses: mikepenz/gradle-dependency-submission@v1.0.0
