@@ -55,11 +55,11 @@ class SMSReceiver : BroadcastReceiver() {
         for (entry in fromAddrToMsgBody) {
             // Build the message to show.
             val strMessage = """
-                New SMS from ${entry.key}
-                to $phoneNum
-                
-                ${entry.value}
-            """.trimIndent()
+SMS from ${entry.key}
+to $phoneNum
+
+${entry.value}
+""".trimIndent()
 
             Log.d(TAG, "onReceive: $strMessage")
 
