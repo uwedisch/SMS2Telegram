@@ -1,23 +1,23 @@
 <resources>
     <string name="app_name">SMS2Telegram</string>
-    <!-- Settings Activity Title -->
-    <string name="title_activity_settings">Settings A</string>
+    <!-- Settings Activity Title (this is not used) -->
+    <string name="title_activity_settings">Settings</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Settings</string>
 
-    <!-- Messages Preferences (this is possibly not used) -->
+    <!-- Messages Preferences (this is not used) -->
     <string name="telegram_settings">Telegram Settings</string>
 
     <!-- Sync Preferences -->
     <string name="sync_telegram_title">Forward all received SMS from this device to the configured Telegram chat or group</string>
-    <string name="action_settings">Settings B</string>
-    <string name="telegram_bot_key">Telegram Bot Key under which SMS2Telegram forwards received SMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="telegram_bot_key">Telegram Bot Key under which SMS2Telegram forwards all received SMS</string>
     <string name="telegram_chat_id">Telegram Chat ID to which all received SMS should be forwarded</string>
 
     <string name="enable_telegram_sync_key">sms2telegram.settings.tg.enabled</string>
     <string name="enable_telegram_bot_key_key">sms2telegram.settings.tg.bot.key</string>
     <string name="enable_telegram_chat_id_key">sms2telegram.settings.tg.chat.id</string>
-    <string name="sim0_number">Number or name of your choice for SIM 1</string>
-    <string name="sim1_number">Number or name of your choice for SIM 2</string>
+    <string name="sim0_number">Number or name of the users choice for SIM 1</string>
+    <string name="sim1_number">Number or name of the users choice for SIM 2</string>
 </resources>
